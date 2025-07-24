@@ -1,1 +1,2 @@
-ECHO is on.
+Fortfarande inte helt klar över vad den här övningen skall innehålla. Skall vi komma överens om ett ämne så att vi har någonstans att börja?
+Testar en rad till för att se om jag kan pusha utan "-u"
