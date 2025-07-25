@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
         <title>
            Grupp 8
@@ -8,7 +9,25 @@
     </head>
     <body>
          <h1>Grupp 8</h1>
-            <p>Vi kan g�ra en hemsida?</p>
-            <p>Vad skriver vi om h�r?</p>
+            <p>Vi kan göra en hemsida?</p>
+            <p>Vad skriver vi om här?</p>
+
+            <div id="login-section">
+                <button id="login-button">Logga in</button>
+            </div>
+
+        <script>
+            // Hitta inloggningsknappen i dokumentet
+            const loginButton = document.getElementById('login-button');
+
+            // Lägg till en "lyssnare" som väntar på att någon klickar på knappen
+            loginButton.addEventListener('click', function() {
+                // Hitta behållaren som knappen ligger i
+                const loginSection = document.getElementById('login-section');
+
+                // Byt ut innehållet i behållaren mot ett meddelande
+                loginSection.innerHTML = '<p>Du är nu inloggad!</p>';
+            });
+        </script>
     </body>
-</html>"  
+</html>
