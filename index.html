@@ -15,19 +15,11 @@
             <div id="login-section">
                 <button id="login-button">Logga in</button>
             </div>
-
-        <script>
-            // Hitta inloggningsknappen i dokumentet
-            const loginButton = document.getElementById('login-button');
-
-            // Lägg till en "lyssnare" som väntar på att någon klickar på knappen
-            loginButton.addEventListener('click', function() {
-                // Hitta behållaren som knappen ligger i
-                const loginSection = document.getElementById('login-section');
-
-                // Byt ut innehållet i behållaren mot ett meddelande
-                loginSection.innerHTML = '<p>Du är nu inloggad!</p>';
-            });
-        </script>
+            <!-- Anropa extern funktion -->
+            <script src="scripts.js"></script>
+            <script>
+                Login(); 
+            </script>
+        
     </body>
 </html>
